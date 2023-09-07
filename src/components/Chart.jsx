@@ -1,7 +1,7 @@
 export function Chart() {
     return (
         <>
-            <div className="container">
+            <div className="table">
                 <thead>Spending - Last 7 days</thead>
                 <table>
                     <tr>mon</tr>
