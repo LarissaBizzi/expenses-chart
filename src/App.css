@@ -7,7 +7,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: hsl(33, 100%, 98%);
+}
+
+body {
+    background-color: hsl(33, 100%, 98%)
 }
 
 .container {
@@ -17,25 +20,68 @@
   }
 
 .header {
-    display: flexbox;
+    display: block;
     background-color: hsl(10, 79%, 65%);
     border-radius: 15px;
-    align-content: space-between;
+    align-items: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
-h2 {
+.header > h2 {
+    font-size: 18px small;
+    color: white;
+    text-align: left;
+}
+
+.header > h1 {
     font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
 }
 
 .table {
     display: block;
     background-color: white;
     border-radius: 15px;
-    align-items: space-between;
     align-items: center;
+    align-content: space-between;
     padding: 20px;
+    margin-bottom: 10px;
   }
 
+.table > thead {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+tr {
+    display:inline-table;
+    font-size: 18px;
+}
+
+.table > h3 {
+    font-size: 18px small;
+    color: black;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.table > h1 {
+    font-size: 18px large;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.table h4 {
+    font-size: 18px small;
+    color: black;
+    text-align: right;
+}
 
 @keyframes logo-spin {
   from {

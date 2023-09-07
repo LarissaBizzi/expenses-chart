@@ -13,9 +13,9 @@ export function Chart() {
                     <tr>sun</tr>
                 </table>
                 <h3>Total this month</h3>
-                <h2>$478.33</h2>
-                <h3>+2.4%</h3>
-                <p>from last month</p>
+                <h1>$478.33</h1>
+                <h4>+2.4%</h4>
+                <h4>from last month</h4>
             </div>
         </>
     )
