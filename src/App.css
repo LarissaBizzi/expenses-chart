@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +8,6 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-body {
-    background-color: hsl(33, 100%, 98%)
 }
 
 .container {
@@ -51,10 +48,10 @@ body {
     margin-bottom: 10px;
   }
 
-.table > thead {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
+.table > h1 {
+    font-size: 18px;
+    font-weight: bolder;
+    color: hsl(25, 47%, 15%);
     text-align: left;
 }
 
@@ -70,18 +67,19 @@ tr {
     padding-top: 40px;
 }
 
-.table > h1 {
+.table > h2 {
     font-size: 18px large;
     font-weight: bold;
-    color: black;
+    color: hsl(25, 47%, 15%);
     text-align: left;
 }
 
-.table h4 {
+.table p {
     font-size: 18px small;
-    color: black;
+    color: hsl(28, 10%, 53%);
     text-align: right;
 }
+
 
 @keyframes logo-spin {
   from {

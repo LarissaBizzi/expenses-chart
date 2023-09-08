@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,9 +29,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  background-color: hsl(27, 66%, 92%);
   display: flex;
   place-items: center;
+  font-size: 18px;
   min-width: 320px;
   min-height: 100vh;
 }

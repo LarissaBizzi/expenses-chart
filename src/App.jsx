@@ -4,6 +4,7 @@ import { Chart } from './components/Chart'
 import { Footer } from './components/Footer'
 
 function App() {
+
   return (
     <>
       <div className='container'>
