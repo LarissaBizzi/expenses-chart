@@ -9,7 +9,6 @@ export function Chart() {
         labels: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
         datasets: [
             {
-                label: "Spendind - last 7 days",
                 backgroundColor: 'hsl(10, 79%, 65%)',
                 hoverBackgroundColor: 'hsl(186, 34%, 60%)',
                 data: [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
@@ -20,11 +19,12 @@ export function Chart() {
     return (
         <>
             <div className="table">
+                <h2>Spending - Last 7 days</h2>
                 <Bar data={state} />
                 <h3>Total this month</h3>
-                <h2>$478.33</h2>
+                <h4>$478.33</h4>
                 <p>+2.4%</p>
-                <p>from last month</p>
+                <h5>from last month</h5>
             </div>
         </>
     )

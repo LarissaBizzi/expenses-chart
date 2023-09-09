@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 #root {
+  font-family: "DM Sans", Arial, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -11,87 +12,111 @@
 }
 
 .container {
-    display: block;
-    border: none;
-    align-items: center;
-  }
+  display: block;
+}
 
 .header {
-    display: block;
-    background-color: hsl(10, 79%, 65%);
-    border-radius: 15px;
-    align-items: space-between;
-    padding: 20px;
-    margin-bottom: 10px;
+  display: block;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 15px;
+  padding: 20px;
 }
 
-.header > h2 {
-    font-size: 18px small;
-    color: white;
-    text-align: left;
+.header h1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
-.header > h1 {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    text-align: left;
+.header p {
+  font-size: 18px large;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .table {
-    display: block;
-    background-color: white;
-    border-radius: 15px;
-    align-items: center;
-    align-content: space-between;
-    padding: 20px;
-    margin-bottom: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+}
+
+.table h2 {
+  font-size: 18px small;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.table h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.table h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin: 0;
+  padding: 0;
   }
-
-.table > h1 {
-    font-size: 18px;
-    font-weight: bolder;
-    color: hsl(25, 47%, 15%);
-    text-align: left;
-}
-
-tr {
-    display:inline-table;
-    font-size: 18px;
-}
-
-.table > h3 {
-    font-size: 18px small;
-    color: black;
-    text-align: left;
-    padding-top: 40px;
-}
-
-.table > h2 {
-    font-size: 18px large;
-    font-weight: bold;
-    color: hsl(25, 47%, 15%);
-    text-align: left;
-}
 
 .table p {
-    font-size: 18px small;
+  font-size: 18px;
+  font-size: 700;
+  color: hsl(28, 10%, 53%);
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.table h5 {
+    font-size: 18px;
+    font-weight: 400;
     color: hsl(28, 10%, 53%);
     text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .table {
+    padding: 15px;
+  }
 }
 
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 576px) {
+  .container {
+    padding: 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .header {
+    padding: 10px;
+  }
+
+  .table {
+    padding: 10px;
   }
 }
