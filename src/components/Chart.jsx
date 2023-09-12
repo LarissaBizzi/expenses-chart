@@ -12,15 +12,31 @@ export function Chart() {
                 backgroundColor: 'hsl(10, 79%, 65%)',
                 hoverBackgroundColor: 'hsl(186, 34%, 60%)',
                 data: [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
-                borderRadius: 8,
+                borderRadius: 6,
             },
         ],
-    }
+    };
+
+    const options = {
+        scales: {
+            x: {
+                grid: {
+                    display: false,
+                },
+            },
+            y: {
+                grid: {
+                    display: false,
+                },
+            },
+        },
+    };
+
     return (
         <>
             <div className="table">
                 <h2>Spending - Last 7 days</h2>
-                <Bar data={state} />
+                <Bar data={state} options={options} />
                 <h3>Total this month</h3>
                 <h4>$478.33</h4>
                 <p>+2.4%</p>
