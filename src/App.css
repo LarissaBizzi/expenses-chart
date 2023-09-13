@@ -9,6 +9,20 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    place-items: center;
+    font-size: 18px;
+    min-width: 320px;
+    min-height: 100vh;
 }
 
 .container {
@@ -59,18 +73,19 @@
 }
 
 .table h3 {
-  font-size: 18px;
+  font-size: 18px small;
   font-weight: 400;
-  color: black;
+  color: hsl(28, 10%, 53%);
   text-align: left;
   padding-top: 20px;
-  margin: 0;
+  margin: 20px 0 0 0;
+  border-top: 1px solid hsl(28, 10%, 53%);
 }
 
 .table h4 {
   font-size: 18px;
   font-weight: 700;
-  color: black;
+  color: hsl(25, 47%, 15%);
   text-align: left;
   margin: 0;
   padding: 0;
@@ -79,7 +94,7 @@
 .table p {
   font-size: 18px;
   font-size: 700;
-  color: hsl(28, 10%, 53%);
+  color: hsl(25, 47%, 15%);
   text-align: right;
   padding: 0;
   margin: 0;
@@ -99,6 +114,16 @@
     padding: 0;
     margin: 0;
 }
+
+.attribution a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+
+.attribution a:hover {
+    color: #535bf2;
+  }
 
 @media (max-width: 768px) {
   .container {
@@ -127,3 +152,6 @@
     padding: 10px;
   }
 }
+.attribution a:hover {
+    color: #747bff;
+  }

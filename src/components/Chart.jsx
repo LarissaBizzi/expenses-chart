@@ -38,7 +38,7 @@ export function Chart() {
                 <h2>Spending - Last 7 days</h2>
                 <Bar data={state} options={options} />
                 <h3>Total this month</h3>
-                <h4>$478.33</h4>
+                <h4 style={{ fontSize: 24 }}>$478.33</h4>
                 <p>+2.4%</p>
                 <h5>from last month</h5>
             </div>

@@ -3,7 +3,7 @@ export function Footer() {
         <>
             <div className="attribution">
                 <p>
-                    Coded by <a href="#">Larissa Bizzi</a>
+                    Coded by <a href="https://github.com/LarissaBizzi/expenses-chart">Larissa Bizzi</a>
                 </p>
             </div>
         </>
