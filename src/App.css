@@ -19,7 +19,6 @@
 body {
     background-color: hsl(27, 66%, 92%);
     display: flex;
-    place-items: center;
     font-size: 18px;
     min-width: 320px;
     min-height: 100vh;
@@ -30,7 +29,9 @@ body {
 }
 
 .header {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: hsl(10, 79%, 65%);
   border-radius: 15px;
   padding: 20px;
@@ -64,50 +65,15 @@ body {
 }
 
 .table h2 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: x-large;
+  font-weight: bold;
   color: hsl(25, 47%, 15%);
   text-align: left;
+  border-top:hsl(25, 47%, 15%);
+  border-width: 10px;
   padding: 0;
   margin: 0 0 20px 0;
 }
-
-.table h3 {
-  font-size: 18px small;
-  font-weight: 400;
-  color: hsl(28, 10%, 53%);
-  text-align: left;
-  padding-top: 20px;
-  margin: 20px 0 0 0;
-  border-top: 1px solid hsl(28, 10%, 53%);
-}
-
-.table h4 {
-  font-size: 18px;
-  font-weight: 700;
-  color: hsl(25, 47%, 15%);
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  }
-
-.table p {
-  font-size: 18px;
-  font-size: 700;
-  color: hsl(25, 47%, 15%);
-  text-align: right;
-  padding: 0;
-  margin: 0;
-}
-
-.table h5 {
-    font-size: 18px;
-    font-weight: 400;
-    color: hsl(28, 10%, 53%);
-    text-align: right;
-    padding: 0;
-    margin: 0;
-  }
 
 .attribution {
     border: 0;
