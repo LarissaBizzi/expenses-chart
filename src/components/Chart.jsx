@@ -40,15 +40,18 @@ export function Chart() {
                     <Bar data={state} options={options} />
                 </article>
                 <article className='pt-8 border-top-8 border-slate-200 block'>
-                    <h3>
-                        <span className='text-base font-normal block opacity-75'>
+                    <div className='text-left'>
+                        <h3 className='text-base font-small block opacity-75'>
                             Total this month
-                        </span>$478.33
+                        </h3>
+                        <p className>478.33</p>
+                    </div>
+                </article>
+                <article className='flex items-end justify-end'>
+                    <h3 className='text-base font-small block opacity-75'>
+                        +2.4%
                     </h3>
-                    <h3 className='flex items-end justify-end flex-col'>
-                        <span className='font-bold block'>+2.4%</span>
-                        from last month
-                    </h3>
+                    <p>from last month</p>
                 </article>
             </div>
         </>
